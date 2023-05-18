@@ -1,16 +1,17 @@
-# VBA-challenge
+# python-challenge
 
 ## Name
-Module 2 Challenge - VBA Challenge
+Module 3 Challenge - python Challenge
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Visuals
-There are screenshots of the Multiple_year_stock_data.xlsm showing the results after running the ticker_vba_script.bas on the sheets. There are three screenshots for each sheet (2018, 2019, and 2020).
+There are two separate folders: PyBank and PyPoll. Each contain a python file (main.py) and a csv file which the python file uses. For PyBank, the python code calculates certain metrics, for example total months, total value of profit & losses, and greatest changes (increase and decrease). A textfile containing all these metrics is created. For PyPoll, the code counts up the total votes per candidate and calculates the percent of share of the votes of each candidate and the winner of the election. The code produces a textfile containing all this information.
 
 ## Usage
-The script is able to determine the change in price in a year for each individual ticker, the percent change, and the total volume traded within the year. Moreover, the script provides the greatest percent increase, greatest percent decrease, and greatest volume traded and the corresponding ticker.
+###PyBank
+This script can be used to read csv files with two columns (i.e., month and profit/loss) and calculate metrics based on that data as mentioned in the description. This could provide useful insight to the financials of the business in question.
+
+###PyPoll
+This script can be used to read csv files with three columns (i.e., voter id, county, and candidate that was voted for) and determine total votes, percentage of votes, and the winner of the election. At the risk of overstating, this script could be useful to determine the outcome of the election and announce the winner!
 
 ## Authors and acknowledgment
 This project was completed alone.
