@@ -63,6 +63,15 @@ with open(csvpath, encoding  = "UTF-8") as csvfile:
     change = int(row[1]) - previous_row
     change_total += change
 
+#Printing into the Terminal
+print("\nFinancial Analysis")
+print("----------------------------")
+print(f"Total Months: {n}")
+print(f"Total ${total}")
+print(f"Average Change: ${average}")
+print(f"Greatest Increase in Profits: {greatest_increase_date} ${greatest_increase}")
+print(f"Greatest Decrease in Profits: {greatest_decrease_date} ${greatest_decrease}\n")
+
 #Printing and Creating textfile
 text = open("financial_analysis.txt", "w")
 text.write("Financial Analysis\n")

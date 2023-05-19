@@ -36,6 +36,25 @@ with open(csvpath, encoding  = "UTF-8") as csvfile:
         else:
             votes[row[2]] = 1
 
+#Printing into the Terminal
+print("\nElection Results")
+print("-------------------------")
+print(f"Total Votes: {n}")
+print("-------------------------")
+
+#Prints list of candidates, the precentage of votes obtained, and total votes obtained
+for name in votes:
+    print(f"{name}: {round(votes[name]*100/n, 3)}% ({votes[name]})")
+
+    #Checks for candidate with highest number of votes and stores their name
+    if votes[name] > winner_votes:
+        winner_votes = votes[name]
+        current_winner = name
+
+print("-------------------------")
+print(f"Winner: {current_winner}")
+print("-------------------------\n")
+        
 #Printing and Creating textfile
 text = open("election_results.txt", "w")
 text.write("Election Results\n")
